@@ -2,6 +2,6 @@ version: '3.8'
 
 services:
   ruby:
-    image: ruby:latest
+    build: .
     volumes:
-      - .:/opt/ruby
+      - .:/opt/ruby:cached
